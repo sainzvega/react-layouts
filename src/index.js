@@ -5,7 +5,12 @@ import "./index.css";
 import { NavTabs } from "./components/NavTabs";
 import { StackExampleBasic } from "./components/Stack/examples";
 import { BoxExampleBasic, BoxExampleInverted } from "./components/Box/examples";
+import {
+  CenterExampleBasic,
+  CenterExampleIntrinsic
+} from "./components/Center/examples";
 
+// TODO: Figure out how to generate this auto
 const routerTable = {
   Stack: {
     routeName: "stack",
@@ -21,6 +26,16 @@ const routerTable = {
     routeName: "box-inverted",
     description: "This example demonstrates Box Inverted Component",
     example: BoxExampleInverted
+  },
+  Center: {
+    routeName: "center",
+    description: "This example demonstrates Center Component",
+    example: CenterExampleBasic
+  },
+  CenterIntrinsic: {
+    routeName: "center-intrinsic",
+    description: "This example demonstrates Center Intrinsic Component",
+    example: CenterExampleIntrinsic
   }
 };
 

@@ -41,6 +41,9 @@
   /*  Color Tokens  */
   --color-light: #fff;
   --color-dark: #000;
+
+  /*  Misc */
+  --measure: 60ch;
 }
 
 *,

@@ -2,6 +2,7 @@ import React from "react";
 import { Input } from "../Input";
 import { Button } from "../Button";
 import { Stack } from "./Stack";
+
 export function StackExampleBasic() {
   return (
     <div>
