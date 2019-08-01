@@ -9,13 +9,43 @@
 
 /* TODO come up with better name. Is this a mod or soemthing else? */
 .center--intrinsic {
-  box-sizing: content-box;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: var(--measure);
-  padding-left: var(--s1);
-  padding-right: var(--s1);
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.center--narrower {
+  max-width: var(--measure-2);
+}
+
+.center--narrow {
+  max-width: var(--measure-1);
+}
+
+.center--wide {
+  max-width: var(--measure1);
+}
+
+.center--wider {
+  max-width: var(--measure2);
+}
+
+.center-gutter--narrower {
+  padding-left: var(--s-2);
+  padding-right: var(--s-2);
+}
+
+.center-gutter--narrow {
+  padding-left: var(--s-1);
+  padding-right: var(--s-1);
+}
+
+.center-gutter--wide {
+  padding-left: var(--s2);
+  padding-right: var(--s2);
+}
+
+.center-gutter--wider {
+  padding-left: var(--s3);
+  padding-right: var(--s3);
 }

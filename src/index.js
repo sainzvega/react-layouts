@@ -7,8 +7,14 @@ import { StackExampleBasic } from "./components/Stack/examples";
 import { BoxExampleBasic, BoxExampleInverted } from "./components/Box/examples";
 import {
   CenterExampleBasic,
+  CenterExampleNarrow,
+  CenterExampleWide,
+  CenterExampleNarrowGutters,
+  CenterExampleWideGutters,
   CenterExampleIntrinsic
 } from "./components/Center/examples";
+
+import { ClusterExampleBasic } from "./components/Cluster/examples";
 
 // TODO: Figure out how to generate this auto
 const routerTable = {
@@ -32,16 +38,41 @@ const routerTable = {
     description: "This example demonstrates Center Component",
     example: CenterExampleBasic
   },
+  CenterNarrow: {
+    routeName: "center-narrow",
+    description: "This example demonstrates Center Narrow Component",
+    example: CenterExampleNarrow
+  },
+  CenterWide: {
+    routeName: "center-wide",
+    description: "This example demonstrates Center Wide Component",
+    example: CenterExampleWide
+  },
+  CenterGutterNarrow: {
+    routeName: "center-gutter-narrow",
+    description: "This example demonstrates Center Narrow Gutter Component",
+    example: CenterExampleNarrowGutters
+  },
+  CenterGutterWide: {
+    routeName: "center-gutter-wide",
+    description: "This example demonstrates Center Wide Gutter Component",
+    example: CenterExampleWideGutters
+  },
   CenterIntrinsic: {
     routeName: "center-intrinsic",
     description: "This example demonstrates Center Intrinsic Component",
     example: CenterExampleIntrinsic
+  },
+  Cluster: {
+    routeName: "cluster",
+    description: "This example demonstrates Cluster Component",
+    example: ClusterExampleBasic
   }
 };
 
 function App() {
   const [currentRouteData, setCurrentRouteData] = useState(
-    routerTable["Stack"]
+    routerTable["Cluster"]
   );
 
   const routes = Object.keys(routerTable);

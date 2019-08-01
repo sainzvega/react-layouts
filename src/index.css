@@ -43,13 +43,27 @@
   --color-dark: #000;
 
   /*  Misc */
+  --measure-2: 20ch;
+  --measure-1: 40ch;
   --measure: 60ch;
+  --measure1: 80ch;
+  --measure2: 100ch;
 }
 
 *,
 *::before,
 *::after {
   box-sizing: border-box;
+  background-color: inherit;
+  font-family: inherit;
+  color: inherit;
+  overflow-wrap: break-word;
+  /* TODO: Determine if we need this reset. */
+  /* margin: 0;
+  padding: 0; */
+  border-style: solid;
+  border-color: var(--color-dark);
+  border-width: 0;
 }
 
 body {
@@ -89,4 +103,31 @@ textarea {
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  padding: 0;
+  margin: 0;
+}
+
+/* UTILS */
+.text-align\:center {
+  text-align: center;
+}
+
+.debug-red {
+  border: 1px solid red;
+}
+
+.debug-blue {
+  border: 1px solid blue;
+}
+
+.debug-green {
+  border: 1px solid green;
 }

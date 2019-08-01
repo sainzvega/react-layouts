@@ -1,0 +1,92 @@
+.cluster {
+  overflow: hidden;
+}
+
+/* Wrapper Elements  */
+.cluster > * {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: calc(var(--s0) / 2 * -1);
+}
+
+/* Content justification */
+.cluster-justify--start > * {
+  justify-content: flex-start;
+}
+
+.cluster-justify--end > * {
+  justify-content: flex-end;
+}
+
+.cluster-justify--center > * {
+  justify-content: center;
+}
+
+.cluster-justify--between > * {
+  justify-content: space-between;
+}
+
+.cluster-justify--around > * {
+  justify-content: space-around;
+}
+
+/* Align items */
+.cluster-align--start > * {
+  align-items: flex-start;
+}
+
+.cluster-align--end > * {
+  align-items: flex-end;
+}
+
+.cluster-align--center > * {
+  align-items: center;
+}
+
+.cluster-align--stretch > * {
+  align-items: space-between;
+}
+
+.cluster-align--baseline > * {
+  align-items: space-between;
+}
+
+/*  TODO: Figure out issues with scale Small is not actually small because of the negative effect */
+.cluster-space--smaller > * {
+  margin: calc(var(--s-2) / 2 * -1);
+}
+
+.cluster-space--small > * {
+  margin: calc(var(--s-1) / 2 * -1);
+}
+
+.cluster-space--big > * {
+  margin: calc(var(--s1) / 2 * -1);
+}
+
+.cluster-space--bigger > * {
+  margin: calc(var(--s2) / 2 * -1);
+}
+
+/* Nested Elements */
+.cluster > * > * {
+  margin: calc(var(--s0) / 2);
+}
+
+.cluster-space--smallest > * > * {
+  margin: calc(var(--s-2) / 2);
+}
+
+.cluster-space--small > * > * {
+  margin: calc(var(--s-1) / 2);
+}
+
+.cluster-space--big > * > * {
+  margin: calc(var(--s1) / 2);
+}
+
+.cluster-space--bigger > * > * {
+  margin: calc(var(--s2) / 2);
+}
