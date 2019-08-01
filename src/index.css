@@ -1,0 +1,89 @@
+:root {
+  /* Font Size Tokens */
+  --font-ratio: 1.25;
+  --font-size-smallest: var(font-size-small) / var(--font-ratio);
+  --font-size-small: var(--font-size-base) / var(--font-ratio);
+  --font-size-base: 1rem;
+  --font-size-bigger: var(--font-size-base) * var(--font-ratio);
+  --font-size-biggest: var(--font-size-big) * var(--font-ratio);
+
+  /* Font Weight Tokens */
+  --font-weight-light: 200;
+  --font-weight-base: 400;
+  --font-weight-heavy: 600;
+
+  /* Font Family Tokens */
+  --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace;
+
+  /* Spacing Tokens */
+  --space-ratio: 1.5;
+  --s-5: calc(var(--s-4) / var(--space-ratio));
+  --s-4: calc(var(--s-3) / var(--space-ratio));
+  --s-3: calc(var(--s-2) / var(--space-ratio));
+  --s-2: calc(var(--s-1) / var(--space-ratio));
+  --s-1: calc(var(--s0) / var(--space-ratio));
+  --s0: var(--font-size-base);
+  --s1: calc(var(--s0) * var(--space-ratio));
+  --s2: calc(var(--s1) * var(--space-ratio));
+  --s3: calc(var(--s2) * var(--space-ratio));
+  --s4: calc(var(--s3) * var(--space-ratio));
+  --s5: calc(var(--s4) * var(--space-ratio));
+
+  /* Border Tokens */
+  --border-thin: 1px;
+  --border-thick: 1.5px;
+  --border-thicker: 2.25px;
+
+  /*  Color Tokens  */
+  --color-light: #fff;
+  --color-dark: #000;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-family-sans-serif);
+}
+
+label {
+  display: inline-block;
+}
+
+input {
+  overflow: visible;
+}
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+button,
+select {
+  text-transform: none;
+}
+
+button,
+input {
+  overflow: visible;
+}
+
+input,
+button,
+select,
+optgroup,
+textarea {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}

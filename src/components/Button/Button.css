@@ -1,0 +1,32 @@
+button:not(:disabled),
+[type="button"]:not(:disabled),
+[type="reset"]:not(:disabled),
+[type="submit"]:not(:disabled) {
+  cursor: pointer;
+}
+
+.button {
+  display: inline-block;
+  font-weight: var(--font-weight-base);
+  color: #212529;
+  text-align: center;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-color: transparent;
+  border: 1px solid transparent;
+  padding: var(--s-2) var(--s-1);
+  font-size: var(--font-size-base);
+  line-height: 1.5;
+  border-radius: 0.15rem;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.button-primary {
+  color: #fff;
+  background-color: #007bff;
+  border-color: #007bff;
+}
