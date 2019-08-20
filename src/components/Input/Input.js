@@ -1,28 +1,31 @@
 import React from "react";
+import classNames from "classnames";
 import "./Input.css";
 import { Stack } from "../Stack";
 import { useUniqueId } from "../hooks/useUniqueId";
 
 export const Input = ({
-  type,
   label,
   error,
-  placeholder,
+  spacing,
+  className,
   ...restInputProps
 }) => {
   const inputId = `input:${useUniqueId()}`;
 
   return (
-    <Stack space="small">
+    <Stack space={spacing || "small"}>
       {label && <label htmlFor={inputId}>{label}</label>}
       <input
         {...restInputProps}
         id={inputId}
-        className="input"
-        type={type}
-        placeholder={placeholder}
+        className={classNames({
+          input: true,
+          "input--error": error && true,
+          [className]: className && className
+        })}
       />
-      {error && <div>Error</div>}
+      {error && <small class="input__error">{error}</small>}
     </Stack>
   );
 };

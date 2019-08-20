@@ -1,4 +1,9 @@
 .stack {
+  --smaller: var(--s-4);
+  --small: var(--s-2);
+  --base: var(--s1);
+  --big: var(--s2);
+  --bigger: var(--s4);
   margin: 0;
   display: flex;
   flex-direction: column;
@@ -11,25 +16,41 @@
 }
 
 .stack > * + * {
-  margin-top: var(--s1);
+  margin-top: var(--base);
+}
+
+.stack-smaller > * + * {
+  margin-top: var(--smaller);
 }
 
 .stack-small > * + * {
-  margin-top: var(--s-3);
+  margin-top: var(--small);
 }
 
-.stack-large > * + * {
-  margin-top: var(--s3);
+.stack-big > * + * {
+  margin-top: var(--big);
+}
+
+.stack-bigger > * + * {
+  margin-top: var(--bigger);
 }
 
 .stack-recursive * + * {
-  margin-top: var(--s1);
+  margin-top: var(--base);
+}
+
+.stack-recursive-smaller * + * {
+  margin-top: var(--smaller);
 }
 
 .stack-recursive-small * + * {
-  margin-top: var(--s0);
+  margin-top: var(--small);
 }
 
-.stack-recursive-large * + * {
-  margin-top: var(--s3);
+.stack-recursive-big * + * {
+  margin-top: var(--big);
+}
+
+.stack-recursive-bigger * + * {
+  margin-top: var(--bigger);
 }

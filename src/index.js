@@ -13,8 +13,8 @@ import {
   CenterExampleWideGutters,
   CenterExampleIntrinsic
 } from "./components/Center/examples";
-
 import { ClusterExampleBasic } from "./components/Cluster/examples";
+import { SidebarExampleBasic } from "./components/Sidebar/examples";
 
 // TODO: Figure out how to generate this auto
 const routerTable = {
@@ -67,6 +67,11 @@ const routerTable = {
     routeName: "cluster",
     description: "This example demonstrates Cluster Component",
     example: ClusterExampleBasic
+  },
+  Sidebar: {
+    routeName: "sidebar",
+    description: "This example demonstrates basic Sidebar",
+    example: SidebarExampleBasic
   }
 };
 

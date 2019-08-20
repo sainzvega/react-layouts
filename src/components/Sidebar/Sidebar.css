@@ -1,0 +1,30 @@
+.sidebar {
+  --smaller: var(--s-4);
+  --small: var(--s-2);
+  --base: var(--s1);
+  --big: var(--s2);
+  --bigger: var(--s4);
+  overflow: hidden;
+}
+
+.sidebar > * {
+  display: flex;
+  flex-wrap: wrap;
+  margin: calc(var(--base) / 2 * -1);
+}
+
+.sidebar > * > * {
+  margin: calc(var(--base) / 2);
+  flex-grow: 1;
+}
+
+.sidebar > * > :last-child {
+  flex-basis: 0;
+  flex-grow: 999;
+  min-width: calc(50% - var(--base));
+}
+
+/* TODO: Figure out how to make this right aligned  */
+/* .sidebar--right > * > :first-child {
+  
+} */
